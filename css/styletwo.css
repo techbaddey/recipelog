@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 	font-size: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
-
-/* ------------Global classes---------- */
-
-i:hover {
-  color: var(--white);
+::-webkit-scrollbar {
+	width: 4px;
 }
-
-/* -------x-----Global classes----x------- */
-
+  
+::-webkit-scrollbar-track {
+	background: white; 
+}
+   
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
 
 /* ---------------variables----------------- */
 :root {
@@ -57,7 +66,6 @@ i:hover {
 .back a, i {
   text-decoration: none;
   color: var(--black);
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -67,7 +75,6 @@ i:hover {
 }
 
 .topic h1 {
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--black);
   font-size: 2rem;
   letter-spacing: 2px;
@@ -108,7 +115,6 @@ i:hover {
 }
 
 .selected {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -138,7 +144,6 @@ i:hover {
 
 .menu a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--black);
@@ -167,7 +172,6 @@ i:hover {
 }
 
 p, li, dl {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 1px;
@@ -199,7 +203,6 @@ font-weight: bold;
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
-  font-family: Arial, Helvetica, sans-serif;
   min-width: 300px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
@@ -233,10 +236,6 @@ font-weight: bold;
   border-bottom: 2px solid var(--dark-blue);
 }
 
-.content-table tbody tr.active-row {
-  color: var(--light-blue);
-}
-
 /* ------------x---------content----------x------------ */
 
 
@@ -254,7 +253,6 @@ font-weight: bold;
 }
 
 .copyright p {
-	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 	font-style: italic;
 	text-align: center;
@@ -269,7 +267,6 @@ font-weight: bold;
 }
 
 .follow-me .about p {
-	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 	font-style: italic;
 	font-weight: bold;

@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 	font-size: 10px;
+	font-family: 'Poppins', sans-serif;
 }
 
 html, body {
@@ -10,6 +13,21 @@ html, body {
 	overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+	width: 4px;
+}
+  
+::-webkit-scrollbar-track {
+	background: white; 
+}
+   
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
 
 /* ---------variables---------- */
 :root {
@@ -45,7 +63,6 @@ img {
 }
 
 .section-title h1 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   color: var(--orange);
   font-weight: bold;
@@ -59,7 +76,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   color: var(--black);
 }
@@ -72,23 +88,19 @@ img {
 }
 
 .btnn .btn{
-	padding: .5rem 1rem;
+	padding: 1rem;
 	border-radius: 7px;
 	font-size: 1.3rem;
 	font-weight: bold;
 	cursor: pointer;
+	border: none;
 }
 
 .btn a {
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: bold;
 	font-size: 1.3rem;
 	color: var(--black);
 	text-decoration: none;
-}
-
-.btn:hover {
-	transform: scaleX(1.05);
 }
 
 .btnn i {
@@ -99,7 +111,6 @@ img {
 
 /*---------- header section---------- */
 .brand-name h1 {
-	font-family: Arial, Helvetica, sans-serif;
 	color: var(--white);
     font-size: 2.6rem;
 	font-style: italic;
@@ -159,7 +170,6 @@ img {
 }
 
 #header .nav-list ul a {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 2rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
@@ -248,6 +258,7 @@ img {
     position: relative;
     z-index: 1;
 	box-shadow: 0 15px 20px rgba(2, 32, 59, 0.2);
+	height: 680px;
 }
 
 .home {
@@ -262,7 +273,6 @@ img {
 }
 
 .home .sect-title h1 {
-	font-family: Arial, Helvetica, sans-serif;
 	color: var(--orange);
 	font-size: 2.5rem;
     font-weight: bold;
@@ -273,7 +283,6 @@ img {
 }
 
 .home .sub-sect p {
-    font-family: Arial, Helvetica, sans-serif;
 	color: var(--black);
 	font-size: 1.1rem;
 }
@@ -290,8 +299,7 @@ img {
 .blog {
 	height: fit-content;
 	width: 100%;
-	padding: 20px 0;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	padding: 20px 0px 70px 0px;
 }
 
 .main-blog {
@@ -324,7 +332,6 @@ img {
 }
 
 .main-blog .blog-post .blog-content .blog-title h2 {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 2rem;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -336,7 +343,6 @@ img {
 }
 
 .main-blog .blog-post .blog-content .blog-title .sub-blog p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4rem;
 	color: var(--black);
 }
@@ -369,27 +375,6 @@ img {
     outline: none;
 }
 
-.pic-blog {
-	margin: 20px auto 0px auto;
-	text-align: center;
-	height: fit-content;
-	padding-bottom: 20px;
-}
-
-.pic-blog h3 {
-	font-size: 2rem;
-	padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	color: var(--black);
-	padding-top: 50px;
-}
-
-.blog .pic-blog img {
-	width: 150px;
-    height: 150px;
-	padding: 5px;
-}
 /* --------------x----------Blogs-----------x----------- */
 
 
@@ -430,7 +415,6 @@ img {
 }
 
 .main-recipe .recipe-post .recipe-content .recipe-title h2 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
   font-weight: bold;
@@ -442,7 +426,6 @@ img {
 }
 
 .main-recipe .recipe-post .recipe-content .recipe-title .sub-recipe p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   color: var(--black);
 }
@@ -476,7 +459,6 @@ img {
 }
 
 .recipe-reels h3 {
-   font-family: Arial, Helvetica, sans-serif;
    font-size: 2rem;
    text-align: center;
    padding-top: 50px;
@@ -556,7 +538,6 @@ img {
 }
 
 .subscribe .detail .label .form-data {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.5rem;
 	letter-spacing: 1.5px;
 	font-weight: bold;
@@ -596,10 +577,6 @@ img {
 	font-style: italic;
 }
 
-.subscribe .detail .btn:hover {
-	transform: scaleX(1.1);
-}
-
 .subscribe .detail .btnn i {
 color: var(--orange);
 }
@@ -635,7 +612,6 @@ color: var(--orange);
 }
 
 .contact .detail .label .form-data {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4rem;
 	letter-spacing: 1.5px;
 	font-weight: bold;
@@ -693,10 +669,6 @@ color: var(--orange);
 	font-style: italic;
 }
 
-.contact .detail .btn:hover {
-	transform: scaleY(1.1);
-}
-
 .contact .detail .btnn i {
 color: var(--orange);
 }
@@ -716,7 +688,6 @@ color: var(--orange);
 }
 
 #footer .copyright p {
-	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 	font-style: italic;
 	text-align: center;
@@ -731,7 +702,6 @@ color: var(--orange);
 }
 
 #footer .follow-me .about p {
-	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 	font-style: italic;
 	font-weight: bold;
@@ -793,7 +763,6 @@ color: var(--orange);
 
 @media only screen and (min-width: 360px) {
     .home .sub-sect p {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--black);
 		font-size: 1.3rem;
 		font-weight: normal;
@@ -827,7 +796,6 @@ color: var(--orange);
 
 @media only screen and (min-width: 560px) {
 	.home .sub-sect p {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--black);
 		font-size: 1.5rem;
 		font-weight: normal;
@@ -857,7 +825,6 @@ color: var(--orange);
 
 @media only screen and (min-width: 768px) {
 	.brand-name h1 {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--white);
 		font-size: 3.2rem;
 		font-weight: 490;
@@ -870,7 +837,6 @@ color: var(--orange);
 	}
 
 	.section-title h1 {
-		font-family: Arial, Helvetica, sans-serif;
 		font-size: 3.5rem;
 		color: var(--orange);
 		font-weight: bold;
@@ -880,21 +846,18 @@ color: var(--orange);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-family: Arial, Helvetica, sans-serif;
 		font-size: 1.5rem;
 		color: var(--black);
 		font-weight: normal;
 	  }
 
 	  .home .sect-title h1 {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--orange);
 		font-size: 3.1rem;
 		font-weight: bold;
 	}
 
 	.home .sub-sect p {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--black);
 		font-size: 1.5rem;
 		font-weight: normal;
@@ -982,7 +945,6 @@ color: var(--orange);
 	}
 	
 	.brand-name h1 {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--white);
 		font-size: 3.5rem;
 		font-weight: 490;
@@ -995,7 +957,6 @@ color: var(--orange);
 	}
 
 	.section-title h1 {
-		font-family: Arial, Helvetica, sans-serif;
 		font-size: 3.4rem;
 		color: var(--orange);
 		font-weight: bold;
@@ -1005,21 +966,18 @@ color: var(--orange);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-family: Arial, Helvetica, sans-serif;
 		font-size: 1.7rem;
 		color: var(--black);
 		font-weight: normal;
 	  }
 
 	  .home .sect-title h1 {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--orange);
 		font-size: 3.5rem;
 		font-weight: bold;
 	}
 
 	.home .sub-sect p {
-		font-family: Arial, Helvetica, sans-serif;
 		color: var(--black);
 		font-size: 2rem;
 		font-weight: normal;
